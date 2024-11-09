@@ -30,4 +30,5 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-brunch mi429
+brunch mi429 userdebug
+brunch mi439
