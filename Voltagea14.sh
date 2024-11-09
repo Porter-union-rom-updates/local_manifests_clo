@@ -3,7 +3,7 @@
 rm -rf .repo/local_manifests/
 
 # repo init rom
-repo init -u https://github.com/RisingTechOSS/android -b fourteen --git-lfs
+repo init -u https://github.com/VoltageOS/manifest.git -b 14 --git-lfs      
 echo "=================="
 echo "Repo init success"
 echo "=================="
@@ -15,7 +15,7 @@ echo "Local manifest clone success"
 echo "============================"
 
 # Sync
-/opt/crave/resync.sh
+/opt/crave/resync.sh && repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
 echo "============="
 echo "Sync success"
 echo "============="
@@ -30,8 +30,4 @@ echo "======= Export Done ======"
 echo "====== Envsetup Done ======="
 
 # Lunch
-riseup mi439 userdebug
-echo "============="
-
-# Build rom
-rise b
+brunch mi429
