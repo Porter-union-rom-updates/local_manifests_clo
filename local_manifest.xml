@@ -1,29 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- Apps -->
-<project path="packages/apps/GrapheneCam" name="MI439-CLO/android_packages_apps_GrapheneCam" remote="github" revision="topaz" clone-depth="1" />
+  <!-- HALs -->
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="AOSPA/android_hardware_qcom_audio" remote="aospa" revision="uvite-89xx-4.19" />
+  <project path="hardware/qcom/display" name="AOSPA/android_hardware_qcom_display" remote="aospa" revision="uvite-89xx-4.19" />
+  <project path="hardware/qcom/gps" name="AOSPA/android_hardware_qcom_gps" remote="aospa" revision="uvite-legacy-component" />
+  <project path="hardware/qcom/media" name="AOSPA/android_hardware_qcom_media" remote="aospa" revision="uvite-89xx-4.19" />
 
-<!-- Kernel -->
-<project path="kernel/xiaomi/sdm439" name="Jprimero15/android_kernel_xiaomi_sdm439-4.19" remote="github" clone-depth="1" revision="udc" />
+  <remove-project name="AOSPA/android_hardware_qcom_wlan" />
+  <project path="hardware/qcom/wlan" name="AOSPA/android_hardware_qcom_wlan" remote="aospa" revision="topaz-taro-backup" />
+  <remove-project name="AOSPA/android_vendor_qcom-opensource_usb" />
+  <project path="vendor/qcom/opensource/usb" name="AOSPA/android_vendor_qcom-opensource_usb" remote="aospa" revision="topaz-taro-backup" />
 
-<!-- HALs -->
-<project path="hardware/mithorium-4.19" name="MI439-CLO/android_hardware_mithorium-4.19" remote="github" clone-depth="1" revision="udc-k4.19" />
+  <!-- Device trees (standalone mi439) -->
+  <project path="device/xiaomi/mi439" name="Gtajisan/android_device_xiaomi_mi439_AOSPA" remote="github" revision="unity" />
 
-<!-- GPS -->
-<project path="hardware/qcom-caf/gps-legacy" name="MI439-CLO/android_hardware_qcom_gps" remote="github" revision="uvite-legacy-component" />
-   
-<!-- Device -->
-<project path="device/xiaomi/mi439" name="Gtajisan/device_xiaomi_mi439" remote="github" revision="udc-2-evo" />
+  <!-- Vendor (xiaomi) -->
+  <project path="vendor/xiaomi" name="ThankYouMario/proprietary_vendor_xiaomi" remote="github" clone-depth="1" revision="uvite" />
+  
+  <!-- Vendor -->
+  <!--remove-project path="vendor/aospa" />
+  <project path="vendor/aospa" name="musfiqurrahmanfahim/android_vendor_penguin" remote="github" revision="unity" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+    <linkfile src="json.sh" dest="generate-json.sh" />
+  </project>
+  
+  <!-- Kernel -->
+  <project path="kernel/msm-4.19" name="AOSPA/android_kernel_xiaomi_sdm439" remote="github" revision="uvite" />
+  
+  <!-- GMS Remove -->
+  <!--remove-project path="vendor/google/gms" />
+  <remove-project path="vendor/google/pixel" />
 
-<project path="device/qcom/common" name="MI439-CLO/device_qcom_common" remote="github" revision="udc-2" />
-
-<!--- Vendor Blobs -->
-<project path="vendor/xiaomi/mi439" name="LOLZKERNEL/proprietary_vendor_xiaomi_mi439-4.19" remote="github" clone-depth="1" revision="udc" />
-
-<project path="vendor/qcom/common" name="ThankYouMario/proprietary_vendor_qcom_common" remote="github" clone-depth="1" revision="uvite" />
-
-<!-- Vendor Opensource -->
-<project path="vendor/qcom/opensource/core-utils" name="MI439-CLO/android_vendor_qcom-opensource_core-utils" remote="github" revision="uvite" />
-
+  <!-- Addon -->
+  <remove-project path="packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="crdroidandroid/android_packages_apps_Dialer" groups="pdk-fs" remote="github" revision="14.0" />
+  <project path="lineage-sdk" name="crdroidandroid/android_lineage-sdk" remote="github" revision="14.0" />
+  
 </manifest>
