@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-
- <!-- MIUI-CAM -->
- <project path="vendor/xiaomi/miuicamera" name="vendor_xiaomi_miuicamera" remote="Shripal17" revision="fifteen-leica" /> 
-  
  <!-- v4x -->
  <project path="packages/apps/ViPER4AndroidFX" name="Gtajisan/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
       
@@ -12,7 +8,7 @@
 <project path="packages/apps/GrapheneCam" name="MI439-CLO/android_packages_apps_GrapheneCam" remote="github" revision="topaz" clone-depth="1" />
 
 <!-- Kernel -->
-<project path="kernel/xiaomi/sdm439" name="Porter-union-rom-updates/android_kernel_xiaomi_sdm439-4.19_ex" remote="github" clone-depth="1" revision="udc" />
+<project path="kernel/xiaomi/sdm439" name="Porter-union-rom-updates/android_kernel_xiaomi_sdm439-4.19" remote="github" clone-depth="1" revision="udc" />
 
 <!-- HALs -->
 <project path="hardware/mithorium-4.19" name="MI439-CLO/android_hardware_mithorium-4.19" remote="github" clone-depth="1" revision="udc-k4.19" />
@@ -21,7 +17,7 @@
 <project path="hardware/qcom-caf/gps-legacy" name="MI439-CLO/android_hardware_qcom_gps" remote="github" revision="uvite-legacy-component" />
    
 <!-- Device -->
-<project path="device/xiaomi/mi439" name="Porter-union-rom-updates/device_xiaomi_mi439_ex" remote="github" revision="pixel/14" />
+<project path="device/xiaomi/mi439" name="Porter-union-rom-updates/device_xiaomi_mi439" remote="github" revision="pixel/14" />
 <project path="device/qcom/common" name="MI439-CLO/device_qcom_common" remote="github" revision="udc-3" />
 
 <!-- Vendor -->
