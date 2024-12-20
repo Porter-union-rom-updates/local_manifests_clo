@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
+   <!-- v4x -->
+   <project path="packages/apps/ViPER4AndroidFX" name="Gtajisan/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
+      
 <!-- Apps -->
 <project path="packages/apps/GrapheneCam" name="MI439-CLO/android_packages_apps_GrapheneCam" remote="github" revision="topaz" clone-depth="1" />
 
