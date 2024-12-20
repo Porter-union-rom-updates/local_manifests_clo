@@ -19,7 +19,7 @@
 
 <!-- Vendor -->
 <remove-project path="vendor/aosp" />
-<project path="vendor/aosp" name="germaniumsculk/vendor_aosp" remote="github" revision="fourteen" />
+<project path="vendor/aosp" name="Gtajisan/vendor_aosp" remote="github" revision="fourteen" />
 
 <!--- Vendor Blobs -->
 <project path="vendor/xiaomi/mi439" name="LOLZKERNEL/proprietary_vendor_xiaomi_mi439-4.19" remote="github" clone-depth="1" revision="udc" />
