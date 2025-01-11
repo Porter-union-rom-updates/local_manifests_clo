@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-<!-- v4x -->
- <!--project path="packages/apps/ViPER4AndroidFX" name="Gtajisan/packages_apps_ViPER4AndroidFX" remote="github" revision="v4a" />
-   
 <!-- Kernel -->
 <project path="kernel/xiaomi/sdm439" name="Jprimero15/android_kernel_xiaomi_sdm439-4.19" remote="github" clone-depth="1" revision="vic" />
 
