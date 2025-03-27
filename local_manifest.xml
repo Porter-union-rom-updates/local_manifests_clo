@@ -19,11 +19,11 @@
    
 <!-- Device -->
 <project path="device/xiaomi/mi439" name="Gtajisan/device_xiaomi_mi439" remote="github" revision="rise_b" />
-<project path="device/qcom/common" name="MI439-CLO/device_qcom_common" remote="github" revision="vic" />
+<project path="device/qcom/common" name="MI439-CLO/device_qcom_common" remote="github" revision="vic-qpr1" />
 
 <!--- Vendor Blobs -->
 <project path="vendor/xiaomi/mi439" name="LOLZKERNEL/proprietary_vendor_xiaomi_mi439-4.19" remote="github" clone-depth="1" revision="vic" />
-<project path="vendor/qcom/common" name="LOLZKERNEL/proprietary_vendor_qcom_common" remote="github" clone-depth="1" revision="vauxite" />
+<project path="vendor/qcom/common" name="LOLZKERNEL/proprietary_vendor_qcom_common" remote="github" clone-depth="1" revision="vauxite-qpr1" />
 
 <!-- Vendor Opensource -->
 <project path="vendor/qcom/opensource/core-utils" name="MI439-CLO/android_vendor_qcom-opensource_core-utils" remote="github" revision="vic" />
